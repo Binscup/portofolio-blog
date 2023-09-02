@@ -359,15 +359,15 @@
                         </a>
                       </div>
                       <div class="col-6">
-                        <a data-fslightbox="gallery" href="./static/photos/everything-you-need-to-work-from-your-bed.jpg">
+                        <a data-fslightbox="gallery" href="./picture/about-crowdfunding.png ">
                           <!-- Photo -->
-                          <div class="img-responsive img-responsive-1x1 rounded-3 border" style="background-image: url(./static/photos/everything-you-need-to-work-from-your-bed.jpg)"></div>
+                          <div class="img-responsive img-responsive-1x1 rounded-3 border" style="background-image: url(./picture/about-crowdfunding.png)"></div>
                         </a>
                       </div>
                       <div class="col-6">
-                        <a data-fslightbox="gallery" href="./static/photos/young-entrepreneur-working-from-a-modern-cafe.jpg">
+                        <a data-fslightbox="gallery" href="./picture/we-have-extra.png">
                           <!-- Photo -->
-                          <div class="img-responsive img-responsive-1x1 rounded-3 border" style="background-image: url(./static/photos/young-entrepreneur-working-from-a-modern-cafe.jpg)"></div>
+                          <div class="img-responsive img-responsive-1x1 rounded-3 border" style="background-image: url(./picture/we-have-extra.png)"></div>
                         </a>
                       </div>
                     </div>
@@ -380,11 +380,10 @@
       <div class="paragraf" style="text-align: right;">
         crowd funding is one of the online-based applications  or commonly referred to as a website that I have created  using wordpres and equipped with qualified features, not only donating and we can also see <br> the company profile of the web. 
       </div>
-          <div class="col-6 col-sm-4 col-md-2 col-xl py-3" style="float: right; ">
-              <a href="#" class="btn btn-info w-100">
-                  More Details
-              </a>
-       </div>
+      <br>
+   <div class="button-wrapper" data-tippy-content="Click to copy button 89" style="float: right;">
+          <button class="button-89" role="button" fdprocessedid="t610je">More Details</button>
+        </div>
     </div>
   </div>
 <!-- example apps -->
@@ -398,13 +397,12 @@
     <div class="col">
       <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 30px; text-align: left;">E-commerce</h1>
       <div class="paragraf" style="text-align: left;">
-        crowd funding is one of the online-based applications or commonly referred to as a website that I have created using wordpres and equipped with qualified features, not only donating and we can also see the company profile of the web. 
+       One of the webs that I created is ecommerce, which is where this web is made for an online website sales platform and already has a dynamic system using WordPress CMS.
       </div>
-      <div class="col-6 col-sm-4 col-md-2 col-xl py-3">
-              <a href="#" class="btn btn-info w-100">
-                  More Details
-              </a>
-       </div>
+      <br>
+   <div class="button-wrapper" data-tippy-content="Click to copy button 89" style="float: left;">
+          <button class="button-89" role="button" fdprocessedid="t610je">More Details</button>
+        </div>
     </div>
     <div class="col-lg-6">
      <div class="row g-2 g-md-3">
@@ -496,13 +494,12 @@
     <div class="col-lg-6 " style="margin-top: 40px; " >
       <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 30px; text-align: right;">CMS-APPS</h1>
       <div class="paragraf" style="text-align: right;">
-        crowd funding is one of the online-based applications  or commonly referred to as a website that I have created  using wordpres and equipped with qualified features, not only donating and we can also see <br> the company profile of the web. 
+       This CMS application is an online-based application where I made this using the Laravel framework, of course the features available are the CRUD system (Crud, Read, Update, Delete), and also the default features are sidebar and dashboard, and there is a mode for guests. 
       </div>
-      <div class="col-6 col-sm-4 col-md-2 col-xl py-3" style="float: right;">
-              <a href="#" class="btn btn-info w-100">
-                  More Details
-              </a>
-       </div>
+      <br>
+    <div class="button-wrapper" data-tippy-content="Click to copy button 89" style="float: right;">
+          <button class="button-89" role="button" fdprocessedid="t610je">More Details</button>
+        </div>
     </div>
   </div>
 <!-- cms apps -->
@@ -527,6 +524,47 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+/* button-crowd_funding */       
+ 
+          
+          .button-89 {
+            --b: 3px;   /* border thickness */
+            --s: .45em; /* size of the corner */
+            --color: #09a6b1;
+            
+            padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+            color: var(--color);
+            --_p: var(--s);
+            background:
+              conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+              var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+            transition: .3s linear, color 0s, background-color 0s;
+            outline: var(--b) solid #00dffc00;
+            outline-offset: .6em;
+            font-size: 16px;
+
+            border: 0;
+
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            
+          }
+
+          .button-89:hover,
+          .button-89:focus-visible{
+            --_p: 0px;
+            outline-color: var(--color);
+            outline-offset: .05em;
+          }
+
+          .button-89:active {
+            background: var(--color);
+            color: #fff;
+          }
+        
+        
+        </style>
 </style>
   </body>
 </html>
