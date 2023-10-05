@@ -39,7 +39,7 @@
 <!--  -->
 
 <!-- navbar -->
-<header class="navbar navbar-expand-md d-print-none" data-bs-theme="dark">
+<header class="navbar navbar-expand-md d-print-none sticky-top" data-bs-theme="dark">
                   <div class="container-xl">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
@@ -247,7 +247,7 @@
             <div class="row row-cards">
               <div class="col-sm-6 col-lg-4">
                 <div class="card card-sm">
-                  <a href="#" class="d-block"><img src="./picture/crowd-funding-apps.png" class="card-img-top"></a>
+                  <a href="#" class="d-block" id="crowdfunding"><img src="./picture/crowd-funding-apps.png" class="card-img-top"></a>
        
                 </div>
               </div>
@@ -277,7 +277,7 @@
 <div class="container text-center">
   <div class="row row-cards">
     <div class="col">
-      <div class="row q">
+      <div class="row ">
                   <div class="col-6">
                     <a data-fslightbox="gallery" href="./picture/crowd-funding2.png">
                       <!-- Photo -->
@@ -321,11 +321,12 @@
         crowd funding is one of the online-based applications  or commonly referred to as a website that I have created  using wordpres and equipped with qualified features, not only donating and we can also see <br> the company profile of the web. 
       </div>
       <br>
-   <button style="float: right;">
-    <p><a href="Visit.html" style="text-decoration: none;">Details</a></p>
-    <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" class="h-4 w-4" xmlns="http://www.w3.org/2000/svg">
-        <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round"></path>
-    </svg>
+ <button class="cta" style="float: right;">
+  <span>Details</span>
+  <svg viewBox="0 0 13 10" height="10px" width="15px">
+    <path d="M1,5 L11,5"></path>
+    <polyline points="8 1 12 5 8 9"></polyline>
+  </svg>
 </button>
 
     </div>
@@ -344,11 +345,12 @@
        One of the webs that I created is ecommerce, which is where this web is made for an online website sales platform and already has a dynamic system using WordPress CMS.
       </div>
       <br>
- <button>
-    <p>Details</p>
-    <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" class="h-4 w-4" xmlns="http://www.w3.org/2000/svg">
-        <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round"></path>
-    </svg>
+ <button class="cta" style="float: left;">
+  <span>Details</span>
+  <svg viewBox="0 0 13 10" height="10px" width="15px">
+    <path d="M1,5 L11,5"></path>
+    <polyline points="8 1 12 5 8 9"></polyline>
+  </svg>
 </button>
     </div>
     <div class="col-lg-6">
@@ -435,7 +437,6 @@
                       </div>
                     </div>
                   </div>
-                  
                 </div>
     </div>
     <div class="col-lg-6 " style="margin-top: 40px; " >
@@ -444,11 +445,12 @@
        This CMS application is an online-based application where I made this using the Laravel framework, of course the features available are the CRUD system (Crud, Read, Update, Delete), and also the default features are sidebar and dashboard, and there is a mode for guests. 
       </div>
       <br>
-   <button style="float: right;">
-    <p>Details</p>
-    <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" class="h-4 w-4 " xmlns="http://www.w3.org/2000/svg">
-        <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round"></path>
-    </svg>
+  <button class="cta" style="float: right;">
+  <span>Details</span>
+  <svg viewBox="0 0 13 10" height="10px" width="15px">
+    <path d="M1,5 L11,5"></path>
+    <polyline points="8 1 12 5 8 9"></polyline>
+  </svg>
 </button>
     </div>
   </div>
@@ -475,74 +477,62 @@ body, html {
   background-size: cover;
 }
 /* button-crowd_funding */
-button {
-  padding: 0;
-  margin: 0;
-  border: none;
-  background: none;
-  
+.cta {
+ position: relative;
+ margin: auto;
+ padding: 12px 18px;
+ transition: all 0.2s ease;
+ border: none;
+ background: none;
 }
 
-button {
-  --primary-color: #1b97bd;
-  --hovered-color: #1e376f;
-  position: relative;
-  display: flex;
-  font-weight: 600;
-  font-size: 20px;
-  gap: 0.5rem;
-  align-items: center;
+.cta:before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ display: block;
+ border-radius: 50px;
+ background: #35d0ff;
+ width: 45px;
+ height: 45px;
+ transition: all 0.3s ease;
 }
 
-button p {
-  margin: 0;
-  position: relative;
-  font-size: 20px;
-  color: var(--primary-color)
+.cta span {
+ position: relative;
+ font-family: "Ubuntu", sans-serif;
+ font-size: 18px;
+ font-weight: 700;
+ letter-spacing: 0.05em;
+ color: #234567;
 }
 
-button::after {
-  position: absolute;
-  content: "";
-  width: 0;
-  left: 0;
-  bottom: -7px;
-  background: var(--hovered-color);
-  height: 2px;
-  transition: 0.3s ease-out;
+.cta svg {
+ position: relative;
+ top: 0;
+ margin-left: 10px;
+ fill: none;
+ stroke-linecap: round;
+ stroke-linejoin: round;
+ stroke: #234567;
+ stroke-width: 2;
+ transform: translateX(-5px);
+ transition: all 0.3s ease;
 }
 
-button p::before {
-  position: absolute;
-/*   box-sizing: border-box; */
-  content: "Details";
-  width: 0%;
-  inset: 0;
-  color: var(--hovered-color);
-  overflow: hidden;
-  transition: 0.3s ease-out;
+.cta:hover:before {
+ width: 100%;
+ background: #79e0ff;
 }
 
-button:hover::after {
-  width: 100%;
+.cta:hover svg {
+ transform: translateX(0);
 }
 
-button:hover p::before {
-  width: 100%;
+.cta:active {
+ transform: scale(0.95);
 }
-
-button:hover svg {
-  transform: translateX(4px);
-  color: var(--hovered-color)
-}
-
-button svg {
-  color: var(--primary-color);
-  transition: 0.2s;
-  position: relative;
-  width: 15px;
-  transition-delay: 0.2s;
-}               
 /* button-crowd_funding */               
         </style>
 </style>
